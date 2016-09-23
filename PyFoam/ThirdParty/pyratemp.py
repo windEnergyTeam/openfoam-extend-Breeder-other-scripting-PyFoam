@@ -294,7 +294,7 @@ def escape(s, format=HTML):
         s = s.replace(toUniCode("&"), toUniCode("&amp;")) # must be done first!
         s = s.replace(toUniCode("<"), toUniCode("&lt;"))
         s = s.replace(toUniCode(">"), toUniCode("&gt;"))
-        s = s.replace(u('"'), toUniCode("&quot;"))
+        s = s.replace(toUniCode('"'), toUniCode("&quot;")) # s.replace(u('"'), toUniCode("&quot;")) ! u() not defined
         s = s.replace(toUniCode("'"), toUniCode("&#39;"))
     elif format == LATEX:
         #TODO: which are the "reserved" characters for LaTeX?
