@@ -349,7 +349,7 @@ class TemplateFile(TemplateFileOldFormat):
                  name=None,
                  content=None,
                  encoding="utf-8",
-                 expressionDelimiter="|",
+                 expressionDelimiter="$", # expressionDelimiter="|",
                  assignmentLineStart="$$",
                  assignmentDebug=None,
                  specials=[],
